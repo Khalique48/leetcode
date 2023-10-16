@@ -72,8 +72,8 @@ function main() {
 class Solution{
     rotate(arr,n){
         //code here
-        let last = arr.pop()
-        arr.unshift(last)
-        return arr
+        let last = arr[n - 1]
+        arr.pop()
+        return [last, ...arr]
     }
 }
