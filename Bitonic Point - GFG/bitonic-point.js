@@ -60,7 +60,7 @@ class Solution {
     {
         //your code here
         let max = 0
-        arr.forEach((item) => {
+        arr.map((item) => {
             if(item > max) max = item
         })
         return max
